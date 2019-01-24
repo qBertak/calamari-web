@@ -6,8 +6,9 @@ import createBlock, {
     Elements
 } from 'calamari';
 
-const classNameApplyer = (classNameData: ClassNameData) => ({
-    className: createClassName(classNameData),
+const classNameApplyer = ({style, ...rest}: ClassNameData) => ({
+    className: createClassName(rest),
+    style,
 });
 
 const nodeCreator = ({component, ...rest}: {component: any}) => createNode({...rest, component: component || 'div'}, classNameApplyer);

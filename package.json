@@ -4,10 +4,11 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "prepublish": "npm run build"
   },
   "dependencies": {
-    "calamari": "0.1.1"
+    "calamari": "0.1.2"
   },
   "devDependencies": {
     "typescript": "^3.2.4"
