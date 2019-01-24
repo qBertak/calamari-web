@@ -7,7 +7,7 @@
     "build": "tsc"
   },
   "dependencies": {
-    "calamari": "0.1.0"
+    "calamari": "0.1.1"
   },
   "devDependencies": {
     "typescript": "^3.2.4"

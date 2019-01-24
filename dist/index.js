@@ -21,8 +21,8 @@ var __rest = (this && this.__rest) || function (s, e) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var calamari_1 = require("calamari");
-var classNameApplyer = function (className_data) { return ({
-    className: calamari_1.createClassName(className_data),
+var classNameApplyer = function (classNameData) { return ({
+    className: calamari_1.createClassName(classNameData),
 }); };
 var nodeCreator = function (_a) {
     var component = _a.component, rest = __rest(_a, ["component"]);
