@@ -1,0 +1,17 @@
+{
+  "name": "calamari-web",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "calamari": "0.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^3.2.4"
+  },
+  "author": "Vadim Mironov",
+  "license": "MIT"
+}
