@@ -20,10 +20,15 @@ var __rest = (this && this.__rest) || function (s, e) {
     return t;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+// @ts-ignore
 var calamari_1 = require("calamari");
-var classNameApplyer = function (classNameData) { return ({
-    className: calamari_1.createClassName(classNameData),
-}); };
+var classNameApplyer = function (_a) {
+    var style = _a.style, rest = __rest(_a, ["style"]);
+    return ({
+        className: calamari_1.createClassName(rest),
+        style: style,
+    });
+};
 var nodeCreator = function (_a) {
     var component = _a.component, rest = __rest(_a, ["component"]);
     return calamari_1.createNode(__assign({}, rest, { component: component || 'div' }), classNameApplyer);

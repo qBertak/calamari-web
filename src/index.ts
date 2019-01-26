@@ -1,10 +1,11 @@
-import createBlock, {
-    createClassName,
-    createNode,
+// @ts-ignore
+import createBlock, {createClassName, createNode} from 'calamari';
+
+import {
     ClassNameData,
     NodeSchema,
-    Elements
-} from 'calamari';
+    Elements,
+} from 'calamari/types';
 
 const classNameApplyer = ({style, ...rest}: ClassNameData) => ({
     className: createClassName(rest),
